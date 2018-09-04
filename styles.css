@@ -1,0 +1,267 @@
+
+* {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: arial;
+
+}
+
+body {
+  background: #3B1B29;
+  margin: 0px;
+}
+
+.boxes {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  height: 70vh;
+  text-align: center;
+}
+
+.image-top {
+  background: url("imgs/leelooo.jpg") center;
+  background-size: cover;
+  height: 30vh;
+}
+
+.image-right {
+  background-image: url("imgs/leeloo.jpg");
+  display: none;
+}
+
+.box {
+  font-size: 16px;
+  width: 100%;
+}
+
+.box:hover, button:hover {
+  background: pink;
+}
+
+.name-box {
+  background: orange;
+  width: 100%;
+}
+
+.profile, .contact {
+  background: #EA7B3A;
+}
+
+.experience, .port {
+  background: #EA8386;
+}
+
+.education {
+  background: #E8BE96;
+}
+
+.blog {
+  background: #CCC38E;
+}
+
+.social {
+  background: #512537;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 5px 0px;
+}
+
+p {
+  font-size: 16px;
+  margin: 5px 20px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.box-icon {
+  display: block;
+  margin: 5px auto;
+  width: 30px;
+}
+
+button {
+  background: rgba(0,0,0,0);
+  border: #fff solid 2px;
+  color: #fff;
+  font-size: 12px;
+  margin: 3px 5px;
+  padding: 5px 10px;
+}
+
+.button-icon {
+  width: 10px;
+}
+
+.arrow-btn {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin-top: 70px;
+  border: none;
+}
+
+#left {
+  background: url("imgs/left.png") top;
+  position: absolute;
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+#right {
+  background: url("imgs/right.png") top;
+  margin-left: auto;
+  margin-right: 10px;
+  position: absolute;
+  right: 0;
+}
+
+.dots {
+  position: absolute;
+  margin-right: 20px;
+  right: 0;
+}
+
+.dot-off {
+  background-color: rgba(255,255,255,.45);
+  border-radius: 50px;
+  border-width: 0px;
+  display: inline-block;
+  margin: 5px 1px 0px 1px;
+  padding: 4px;
+}
+
+.dot-on {
+  background-color: #ffffff;
+  border-radius: 50px;
+  border-width: 0px;
+  display: inline-block;
+  margin: 5px 1px 0px 1px;
+  padding: 4px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+  .image-top {
+    height: 40vh;
+  }
+
+  .boxes {
+    height: 60vh;
+  }
+
+  .box {
+    width: 50%;
+    padding-bottom: 10px;
+  }
+
+  .name-box {
+    text-align: left;
+    width: 50%;
+    padding-bottom: 10px;
+  }
+
+  .box-icon {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 50px;
+  }
+
+  h1 {
+    font-size: 26px;
+    margin: 15px 0px 15px 20px;
+    text-align: left;
+  }
+
+  p {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  button {
+    margin: 10px 5px 0px 20px;
+  }
+
+  .arrow-btn {
+  margin-top: 105px;
+  }
+}
+
+
+@media screen and (min-width : 1024px) {
+  
+  .wrapper {
+    display: flex;
+  }
+
+  .boxes {
+    margin: 0px;
+    width: 60%;
+    height: 100vh;
+  }
+
+  .image-top {
+    display: none;
+  }
+
+  .image-right {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 40%;
+  }
+
+  .box {
+    font-size: 20px;
+    width: 33.33333%;
+  }
+
+  .name-box {
+    text-align: left;
+    width: 66.66666%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 26px;
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .box-icon {
+    margin-top: 50px;
+  }
+
+  .arrow-btn {
+    margin-top: 300px;
+  }
+
+  .dot-on, .dot-off {
+    margin-top: 20px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+}
+
